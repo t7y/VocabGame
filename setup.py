@@ -1,7 +1,7 @@
 from setuptools import setup
 
 APP = ['main.py']  # Replace with your main script name
-DATA_FILES = []         # List any additional files/folders (images, sounds, etc.)
+DATA_FILES = ['vocab.tsv', 'soundwave.png']         # List any additional files/folders (images, sounds, etc.)
 OPTIONS = {
     'argv_emulation': True,
     'packages': ['pygame', 'pyttsx3'],  # Include any packages your game uses
@@ -9,6 +9,7 @@ OPTIONS = {
 }
 
 setup(
+    name="IELTsVocab",
     app=APP,
     data_files=DATA_FILES,
     options={'py2app': OPTIONS},
